@@ -18,8 +18,8 @@ class _MyAppState extends State<MyApp> {
       hoverColor: Colors.transparent,
       child: Image.asset(
         'Assets/$image.png',
-        height: 110,
-        width: 110,
+        height: 125,
+        width: 125,
       ),
       onTap: () {
         setState(() {
@@ -49,9 +49,9 @@ class _MyAppState extends State<MyApp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                changeImage("1"),
-                changeImage("2"),
-                changeImage("3"),
+                Expanded(child: changeImage("1")),
+                Expanded(child: changeImage("2")),
+                Expanded(child: changeImage("3")),
               ],
             )
           ]),
